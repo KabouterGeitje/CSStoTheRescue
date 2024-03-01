@@ -12,7 +12,7 @@ We moeten voor de eindopdracht kiezen uit 4 cases. Ik heb gekozen voor een soort
 
 Hieronder de schets die ik heb gemaakt tijdens de les:
 
-![schetsen](/docs/screenshots/flipperkastSchets.jpg)
+![schetsen](/docs/images/flipperkastSchets.jpg)
 </details>
 
 
