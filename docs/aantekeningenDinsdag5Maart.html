@@ -1,0 +1,68 @@
+
+// aantekeningen //
+
+** // SVG filters // **
+
+// spelen met filters, dan kom je rachter wat je er allemaal mee kan.
+// defs hmtl element wat je kan gebruiken wat je niet ziet maar er wel is.
+// in svg met defs geef je plaatje met id een filter met naam van de filter 
+// en dan kan je zeggen in="SourceAlpha" of "SourceGraphic" en stdDeviation en afsluiten met een /
+// je kan ook effecten combineren. Je geeft dan het resultaat van 1 filter een naam en dan zet je 
+// in de defs een feMerge en daarin zet je een feMergeNode en dan heef je het resultaat en de sourcegraphic door. 
+// met FeComposite maak je een samenvoeging van meerdere filters die je een eigen naam kunt geven en met feMerge kan je het filter
+// en de oorspronkelijke content op elkaar plakken.
+// het is slim om de namen die je zelf bedenkt om die in hoofdletters te zetten voor overzichtelijkheid.
+
+// blob maken met svg filters
+// zet de filters op de parent van de kinderen die je wilt filteren. 
+// blur de rondjes. verhoog het contrast.
+// dat kan je doen met een color matrix.
+feColorMatrix
+    mode="matrix"
+    values= "
+    1 0 0 0 0 (R G B A)
+    0 1 0 0 0
+    0 0 1 0 0
+    0 0 0 50 -24"
+    result="naam van je result"
+
+    je kan een ruis maken door het ruis filter te gebruiken. meerdere varianten te maken waarbij ze allemaal een andere seed krijgen
+    en dan kan je in je animatie in css rouleren tussen de keyframes en dan ruist je tekst, plaatje etc. 
+
+   ** // has() // **
+
+   // laptop viel uit :(
+
+   // Weekly nerd week 4
+
+   // Nils Binder - 9ELEMENTS
+   // Is gek op origami :)
+
+   // Communication design
+   // Product Development
+   // Web Development <-- hier gaat hij wat over vertellen, want hij werkt in dit department. 
+   // op 9elements kan je meer zien wat ze hebben gemaakt.
+   // Let's talk about Wrappers
+   // een wrapper zet meestal een max-width voor de cotent en centreert de content.
+   // .wrapper {
+        wdith:min(100% - 3rem, 75rem); (hiermee hoef je geen padding te zetten van 0 en 1.5rem)
+        margin-inline: auto; 
+   }
+
+   // Er zijn nog kortere versies om dit te schrijven, maar dan wordt het unreadable, dus dat raad hij af.
+   // hij heeft het over designen voor grotere schermen en dat je niet zo veel whitespace moet gebruiken.
+   Hij legt uit hoe figma veel meer in tune is met code schrijven dan bijvoorbeeld photoshop.
+   websites zien er door de jaren heen heel erg hetzelfde uit als vroeger. 
+   Design voor flexibiliteit, omdat het kan.
+
+   optional column techniek: je zet een aantal fractions en zet de inhoud op auto in grit. En hiermee groeit je content mooi
+   mee en krijg je een beetje een magazine vibe.
+
+   Je kan veel interessantere grids's gebruiken voor je website design.
+   website van de slides: dasruhrgebiet.de 
+
+   je kan je whitespace wel gebruiken, maar doe het slimmer en interessanter dan 2 gelijke witte vlakken: bryck.com 
+
+
+
+

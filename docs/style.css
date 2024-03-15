@@ -1,3 +1,335 @@
-body{
-    background-color: red;
+@font-face {
+    font-family: LaserCorps;
+    src: url(../docs/fonts/laser-corps-font/LaserCorpsHalftoneItalic-vmv17.otf);
 }
+
+@root {
+
+}
+
+body{
+    margin: 0;
+    height:100dvh;
+    width: 100%;
+
+    background-image:linear-gradient(darkblue, black);
+    overflow: hidden;
+    perspective: 40em;
+}
+
+main{
+    margin:0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    transform-style:preserve-3d;
+}
+
+h1{
+    font-family: LaserCorps;
+    font-weight: 100;
+    font-size: clamp(1rem, 8vw, 3rem);
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    filter: drop-shadow(0px 0px 20px blue);
+    
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+}
+
+.machine{
+    width: clamp(20em, 60%, 48vmin);
+    aspect-ratio: 4 / 7;
+
+    background-color: rgb(100, 80, 60);
+    border-radius: 50% 51% 49% / 28% 27% 73% 72%;
+
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+
+.tubeRight {
+    background-color: pink;
+
+    grid-column-start: 11;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 25;
+
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 4;
+}
+
+.tube2 {
+    background-color: pink;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 16;
+
+}
+
+/* .tubeRightPart1{
+    width: 100%;
+    aspect-ratio: 1 / 8;
+
+    background-image: radial-gradient(at -110% bottom,
+        red 80%,
+        transparent 80% 100%
+    );
+    border-top-right-radius: 60%;
+
+    grid-area: 3 / 3 / 4 / 4; 
+    place-self: end;
+
+    display: grid;
+} */
+
+.upperBumpers {
+    background-color: red;
+
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.pijlen {
+    background-color: orange;
+
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+
+.pijl1 {
+
+}
+
+.rocket {
+    background-color: green;
+
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 15;
+    grid-row-end: 20;
+
+    z-index: 1;
+}
+
+.gutter {
+    background-color: yellow;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+
+    grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 13;
+    grid-row-end: 25;
+
+    display: grid;
+}
+
+@media all and (min-width: 1100px) {
+    ul{
+        visibility: visible;
+        width: 120vmin;
+        aspect-ratio: 1/1;
+        margin-top: 15%;
+
+        position: absolute;
+
+        border-radius: 50%;
+
+        transform-style:preserve-3d;
+        rotate: x 50deg;
+        transform-origin: center 70%;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul::after{
+        content:"";
+        position:absolute;
+        inset:0;
+        border-radius:inherit;
+                
+        background-image:
+            repeating-radial-gradient(
+                transparent 0 4.8%,
+                #0096 0 5.3%
+            );
+
+            mask-image:
+            conic-gradient(
+                red 100deg,
+                transparent 150deg 210deg,
+                red 260deg
+            );
+    }
+
+    ul li {
+        width: 10vmin;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+
+        background-color: blue;
+        z-index:10;
+        grid-area: 1 / 1;
+
+        animation-name: planeet;
+	
+	    animation-iteration-count:infinite;
+	    animation-timing-function:linear;
+    }
+}
+
+@keyframes planeet {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg);
+	}
+}
+
+ul li:nth-of-type(1) {
+	--radius:60vmin;
+	width:11vmin;
+	background-image:
+    repeating-radial-gradient( ellipse at 10% 50%,
+        transparent 50%,
+        blue 60%, 
+        transparent 70%,
+        blue 75%),
+        repeating-radial-gradient( ellipse at 50% 10%,
+        lightblue 50%,
+        blue 60%, 
+        beige 70%,
+        blue 75%);
+	animation-duration:15s;
+}
+
+ul li:nth-of-type(2) {
+	--radius:55vmin;
+	width:7vmin;
+	background-image:
+        repeating-radial-gradient( ellipse at 40% 10%,
+        lightblue 50%,
+        blue 60%, 
+        darkblue 70%,
+        blue 75%);
+	animation-duration:26s;
+}
+
+ul li:nth-of-type(3) {
+	--radius:50vmin;
+	width:8vmin;
+	background-image:
+        repeating-radial-gradient( ellipse at 10% 40%,
+        hotpink 50%,
+        purple 60%, 
+        pink 70%,
+        purple 75%);
+	animation-duration:20s;
+}
+
+ul li:nth-of-type(4) {
+	--radius:45vmin;
+	width:10vmin;
+	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	animation-duration:13s;
+}
+
+ul li:nth-of-type(5) {
+	--radius:40vmin;
+	width:4.5vmin;
+	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	animation-duration:16s;
+}
+
+ul li:nth-of-type(6) {
+	--radius:35vmin;
+	width:6vmin;
+	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	animation-duration:15s;
+}
+
+ul li:nth-of-type(7) {
+	--radius:30vmin;
+	width:5.5vmin;
+	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	animation-duration:24s;
+}
+
+ul li:nth-of-type(8) {
+	--radius:25vmin;
+	width:5vmin;
+	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	animation-duration:20s;
+}
+
+
+
+/* 
+
+main{
+    transform-style:preserve-3d;
+}
+
+@media all and (min-width: 1100px) {
+    ul{
+        inset: 0;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        place-items:center;
+        place-content: center;
+        transform-style:preserve-3d;
+        rotate: x 75deg;
+        transform-origin: center 70%;
+        visibility: visible;
+    }
+    
+    ul::after {
+        content:"";
+        position:absolute;
+        inset:0;
+        border-radius:inherit;
+        
+        background-image:
+            repeating-radial-gradient(
+                transparent 0 6%,
+                #0096 0 6.5%
+            );
+        
+        mask-image:
+            conic-gradient(
+                red 100deg,
+                #f002 170deg 190deg,
+                red 260deg
+            )
+    }
+    
+    ul li{
+        width: 5vmin;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color:greenyellow;
+        grid-area: 1/1;
+    }
+} */
