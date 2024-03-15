@@ -44,9 +44,9 @@ Dit hielp enorm en werkte zoals ik wilde. Alleen kan het hele flipperkastje nu o
 
 hieronder wat ik tot nu toe heb:
 
-![totnutoe](/docs/images/tot_nu_toe)
+![totnutoe](/docs/images/tot_nu_toe.png)
 
-![totnutoeklein](/docs/images/tot_nu_toe_klein)
+![totnutoeklein](/docs/images/tot_nu_toe_klein.png)
 
 </details>
 
