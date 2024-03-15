@@ -3,7 +3,7 @@
 ## Logboek per week
 
 <details>
-  <summary>dag 1</summary>
+  <summary>week 1</summary>
   
   ## Wat heb ik gedaan?
 Allereerst hebben we het gehad over allemaal 'nieuwe' features van CSS. De groep was verdeeld in kleinere groepen en iedereen kreeg een andere feature om onderzoek naar te doen en dit te presenteren. Het was heel leuk en interessant om te zien wat er allemaal nog meer mogelijk is met CSS en ik heb heel veel zin in dit vak!
@@ -15,6 +15,40 @@ Hieronder de schets die ik heb gemaakt tijdens de les:
 ![schetsen](/docs/images/flipperkastSchets.jpg)
 </details>
 
+<details>
+  <summary>week 2</summary>
+  
+  ## Wat heb ik gedaan?
+
+</details>
+
+<details>
+  <summary>week 3</summary>
+  
+  ## Wat heb ik gedaan?
+Ik ben verder gegeaan met het uitwerken van mijn idee. Ik heb de planeten die ik met Sanne gemaakt had vorige week in mijn eigen ontwerp verwerkt. Daarna wilde ik de verschillende containers in mijn ontwerp de goede maten en plek geven
+in een grid. Toen bleek dat mijn h1 naar boven verdween, want mijn main was ook een grid en bij het groter worden van mijn scherm, gebeurde dat, toen heb ik dit naar een flexbox omgezet, en dit hielp.
+
+![h1](/docs/images/h1_verdwijnt_naar_boven.png)
+
+Daarna wilde ik mijn containers in mijn hoofdcontainer positioneren met grid.
+Hier heb ik lang mee gepuzzeld en toen ik dacht te weten hoe ik het allemaal wilde doen, bleek dat als één van mijn containers de andere overlapte, dat het hele grid raar ging doen en vervormde. Toen besloot ik het grid ingeiwkkelder te maken en op basis van het grid de content een grootte te geven. 
+
+![divs](/docs/images/Divs_positioneren_misschien_met_ingewikkelder_grid.png)
+
+![divscode](/docs/images/Divs_positioneren_misschien_met_ingewikkelder_grid_code.png)
+
+Dit hielp enorm en werkte zoals ik wilde. Alleen kan het hele flipperkastje nu ook gesquished worden als je het scherm abnormaal klein maakt, maar ik dacht, dit gaat toch niet gebeuren op een normaal scherm, dus vond ik het niet zo erg.
+
+![gridraster](/docs/images/Lijnen_uitzetten_voor_mezelf.png)
+
+hieronder wat ik tot nu toe heb:
+
+![totnutoe](/docs/images/tot_nu_toe)
+
+![totnutoeklein](/docs/images/tot_nu_toe_klein)
+
+</details>
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
