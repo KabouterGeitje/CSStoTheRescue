@@ -31,6 +31,8 @@
           </div>
           <div class="tubeRightPart2"></div>
           <div class="tubeRightPart3"></div>
+          <div class="tubeRightPart4"></div>
+          <div class="tubeRightPart4"></div>
         </div>
         <div class="tube2">
           <div class="tubeLeftPart1"></div>
@@ -39,6 +41,8 @@
           <div class="tubeLeftPart4"></div>
           <div class="tubeLeftPart5"></div>
           <div class="tubeLeftPart6"></div>
+          <div class="tubeLeftPart7"></div>
+          <div class="tubeLeftPart8"></div>
         </div>
         <div class="upperBumpers">
           <div class="bumper1"></div>
@@ -51,11 +55,21 @@
           <div class="pijl3"></div>
         </section>
         <div class="rocket">
-          <div></div>
+          <div class="rocketBody"></div>
+          <div class="leftWing"></div>
+          <div class="rightWing"></div>
         </div>
         <section class="flippers">
-          <div class="flipperLeft"></div>
-          <div class="flipperRight"></div>
+          <div class="flipperLeft">
+            <div class="verticalLeft"></div>
+            <div class="horizontalLeft"></div>
+            <div class="flipper1"></div>
+          </div>
+          <div class="flipperRight">
+            <div class="verticalRight"></div>
+            <div class="horizontalRight"></div>
+            <div class="flipper2"></div>
+          </div>
         </section>
         <div class="gutter">
           <div class="leftgutter"></div>
@@ -63,5 +77,21 @@
         </div>
     </section>
     </main>
+    <!-- code uit blobby -->
+    <svg> 
+      <defs>
+        <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+        <feColorMatrix 
+        mode="matrix" 
+        values="
+                1  0  0  0  0
+                0  1  0  0  0
+                0  0  1  0  0
+                0  0  0  50  -24"
+        result="blob" 
+        />
+        <feBlend in="SourceGraphic" in2="blob" />
+      </defs>
+    </svg>
   </body>
 </html>

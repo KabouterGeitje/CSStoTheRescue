@@ -3,9 +3,6 @@
     src: url(../docs/fonts/laser-corps-font/LaserCorpsHalftoneItalic-vmv17.otf);
 }
 
-@root {
-
-}
 
 body{
     margin: 0;
@@ -19,7 +16,7 @@ body{
 
 main{
     margin:0;
-    height: 100%;
+    height: auto;
     width: 100%;
 
     display: flex;
@@ -37,6 +34,7 @@ h1{
     color: white;
     text-shadow: 0px 0px 20px black;
     filter: drop-shadow(0px 0px 20px blue);
+    margin: 0;
     
 }
 
@@ -45,8 +43,10 @@ ul{
     list-style: none;
 }
 
+/* De machine */
+
 .machine{
-    width: clamp(20em, 60%, 48vmin);
+    width: clamp(18em, 60%, 40vmin);
     aspect-ratio: 4 / 7;
 
     background-color: rgb(100, 80, 60);
@@ -57,6 +57,8 @@ ul{
     grid-template-rows: repeat(24, 1fr);
 }
 
+/* Rechter tube */
+
 .tubeRight {
     background-color: pink;
 
@@ -66,9 +68,45 @@ ul{
     grid-row-end: 25;
 
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 4;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+
+    filter:url(#blobby);
 }
+
+.tubeRightPart1 {
+    background-color: blue;
+
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 14;
+    grid-row-end: 25;
+}
+
+.tubeRightPart2 {
+    background-color: blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 14;
+    border-radius: 10px;
+    transform-origin: bottom right;
+    transform: rotate(-30deg) translateX(0.2em);
+}
+
+.tubeRightPart3 {
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 10;
+    border-radius: 10px;
+    transform-origin: bottom left;
+    transform: rotate(15deg) translateX(-0.2em);
+}
+
+/* Linker tube */
 
 .tube2 {
     background-color: pink;
@@ -78,32 +116,62 @@ ul{
     grid-row-start: 3;
     grid-row-end: 16;
 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(13, 1fr);
 }
 
-/* .tubeRightPart1{
-    width: 100%;
-    aspect-ratio: 1 / 8;
-
-    background-image: radial-gradient(at -110% bottom,
-        red 80%,
-        transparent 80% 100%
-    );
-    border-top-right-radius: 60%;
-
-    grid-area: 3 / 3 / 4 / 4; 
-    place-self: end;
-
-    display: grid;
-} */
+/* Bovenste bumpers */
 
 .upperBumpers {
-    background-color: red;
-
     grid-column-start: 9;
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 6;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
+
+.upperBumpers > div {
+    background-color: grey;
+    background-image: 
+    radial-gradient(ellipse 90% 60% at 50% 10%, yellow 40%, transparent 40% 100%),
+    radial-gradient(ellipse 90% 60% at 50% 90%, yellow 40%, transparent 40% 100%),
+    radial-gradient(ellipse 60% 90% at 0% 50%, yellow 40%, transparent 40% 100%),
+    radial-gradient(ellipse 60% 90% at 100% 50%, yellow 40%, transparent 40% 100%);
+    border-radius: 50%;
+}
+
+.bumper1{
+    transform: rotate(45deg);
+
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.bumper2{
+    transform: rotate(-45deg);
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.bumper3{
+    transform: rotate(-45deg);
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+/* Middelste pijlen */
 
 .pijlen {
     background-color: orange;
@@ -112,11 +180,44 @@ ul{
     grid-column-end: 9;
     grid-row-start: 10;
     grid-row-end: 15;
+
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
-.pijl1 {
+.pijlen > div {
+    background-color: blue;
+    clip-path: polygon(50% 0%, 0% 50%, 0% 100%, 50% 65%, 100% 100%, 100% 50%);
+    border-left: solid white 5px;
+    border-right: solid white 5px;
+}
+
+.pijl1{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.pijl2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
 
 }
+
+.pijl3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 10;
+}
+
+/* Raket */
 
 .rocket {
     background-color: green;
@@ -127,7 +228,20 @@ ul{
     grid-row-end: 20;
 
     z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
+
+.rocketBody{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+
+/* Gutter */
 
 .gutter {
     background-color: yellow;
@@ -140,7 +254,11 @@ ul{
     grid-row-end: 25;
 
     display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
+
+/* Planeten bij groter scherm */
 
 @media all and (min-width: 1100px) {
     ul{
@@ -282,54 +400,3 @@ ul li:nth-of-type(8) {
 	background-image:linear-gradient(turquoise 50%, hotpink 0);
 	animation-duration:20s;
 }
-
-
-
-/* 
-
-main{
-    transform-style:preserve-3d;
-}
-
-@media all and (min-width: 1100px) {
-    ul{
-        inset: 0;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        place-items:center;
-        place-content: center;
-        transform-style:preserve-3d;
-        rotate: x 75deg;
-        transform-origin: center 70%;
-        visibility: visible;
-    }
-    
-    ul::after {
-        content:"";
-        position:absolute;
-        inset:0;
-        border-radius:inherit;
-        
-        background-image:
-            repeating-radial-gradient(
-                transparent 0 6%,
-                #0096 0 6.5%
-            );
-        
-        mask-image:
-            conic-gradient(
-                red 100deg,
-                #f002 170deg 190deg,
-                red 260deg
-            )
-    }
-    
-    ul li{
-        width: 5vmin;
-        aspect-ratio: 1/1;
-        border-radius: 50%;
-        background-color:greenyellow;
-        grid-area: 1/1;
-    }
-} */
