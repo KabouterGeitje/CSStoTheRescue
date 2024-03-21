@@ -11,6 +11,23 @@
     <title>Web App From Scratch 23-24</title>
   </head>
   <body>
+    <svg> 
+      <defs>
+        <filter id="blobby">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+         <feColorMatrix 
+          mode="matrix" 
+          values="
+                  1  0  0  0  0
+                  0  1  0  0  0
+                  0  0  1  0  0
+                  0  0  0  50  -24"
+          result="blob" 
+          />
+         <feBlend in="SourceGraphic" in2="blob" />
+      </filter>
+      </defs>
+    </svg>
     <main>
       <h1>Space Ball</h1>
       <ul>
@@ -78,20 +95,5 @@
     </section>
     </main>
     <!-- code uit blobby -->
-    <svg> 
-      <defs>
-        <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
-        <feColorMatrix 
-        mode="matrix" 
-        values="
-                1  0  0  0  0
-                0  1  0  0  0
-                0  0  1  0  0
-                0  0  0  50  -24"
-        result="blob" 
-        />
-        <feBlend in="SourceGraphic" in2="blob" />
-      </defs>
-    </svg>
   </body>
 </html>
