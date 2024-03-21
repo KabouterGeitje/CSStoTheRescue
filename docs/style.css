@@ -16,7 +16,7 @@ body{
 
 main{
     margin:0;
-    height: auto;
+    height: 100%;
     width: 100%;
 
     display: flex;
@@ -34,7 +34,7 @@ h1{
     color: white;
     text-shadow: 0px 0px 20px black;
     filter: drop-shadow(0px 0px 20px blue);
-    margin: 0;
+    margin-top:0;
     
 }
 
@@ -263,7 +263,7 @@ ul{
 @media all and (min-width: 1100px) {
     ul{
         visibility: visible;
-        width: 120vmin;
+        width: 130vmin;
         aspect-ratio: 1/1;
         margin-top: 15%;
 
@@ -273,7 +273,7 @@ ul{
 
         transform-style:preserve-3d;
         rotate: x 50deg;
-        transform-origin: center 70%;
+        transform-origin: center 65%;
 
         display: grid;
         align-items: center;
@@ -298,6 +298,10 @@ ul{
                 transparent 150deg 210deg,
                 red 260deg
             );
+
+            mask-image: radial-gradient(
+                transparent 30%,
+                red 30% 100%);
     }
 
     ul li {
@@ -308,25 +312,87 @@ ul{
         background-color: blue;
         z-index:10;
         grid-area: 1 / 1;
-
-        animation-name: planeet;
-	
-	    animation-iteration-count:infinite;
-	    animation-timing-function:linear;
     }
 }
 
-@keyframes planeet {
+@keyframes planeet8 {
 	0% {
-		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg);
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(10%);
 	}
 	100% {
-		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg);
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(-55%);
+	}
+}
+
+@keyframes planeet7 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(0%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(-10%);
+	}
+}
+
+@keyframes planeet6 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(-5%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(-10%);
+	}
+}
+
+@keyframes planeet5 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(10%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(-50%);
+	}
+}
+
+
+@keyframes planeet4 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(-10%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(50%);
+	}
+}
+
+@keyframes planeet3 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(-10%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(30%);
+	}
+}
+
+@keyframes planeet2 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(-10%);
+	}
+	100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(30%);
+	}
+}
+
+@keyframes planeet1 {
+	0% {
+		transform:rotateZ(0turn) translateY( var(--radius) ) rotateZ(0turn) rotateX(-50deg) translateX(-10%);
+	}
+    90% {
+		transform:rotateZ(0.9turn) translateY( var(--radius) ) rotateZ(-0.9turn) rotateX(-50deg) translateX(50%);
+	}
+    100% {
+		transform:rotateZ(1turn) translateY( var(--radius) ) rotateZ(-1turn) rotateX(-50deg) translateX(-10%);
 	}
 }
 
 ul li:nth-of-type(1) {
-	--radius:60vmin;
+	--radius:67vmin;
 	width:11vmin;
 	background-image:
     repeating-radial-gradient( ellipse at 10% 50%,
@@ -339,11 +405,15 @@ ul li:nth-of-type(1) {
         blue 60%, 
         beige 70%,
         blue 75%);
+    
+    animation-name: planeet8;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
 	animation-duration:15s;
 }
 
 ul li:nth-of-type(2) {
-	--radius:55vmin;
+	--radius:60vmin;
 	width:7vmin;
 	background-image:
         repeating-radial-gradient( ellipse at 40% 10%,
@@ -351,11 +421,15 @@ ul li:nth-of-type(2) {
         blue 60%, 
         darkblue 70%,
         blue 75%);
+
+    animation-name: planeet7;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:26s;
 }
 
 ul li:nth-of-type(3) {
-	--radius:50vmin;
+	--radius:55vmin;
 	width:8vmin;
 	background-image:
         repeating-radial-gradient( ellipse at 10% 40%,
@@ -363,40 +437,65 @@ ul li:nth-of-type(3) {
         purple 60%, 
         pink 70%,
         purple 75%);
+
+    animation-name: planeet6;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:20s;
 }
 
 ul li:nth-of-type(4) {
-	--radius:45vmin;
+	--radius:51.5vmin;
 	width:10vmin;
-	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	background-image:linear-gradient(red 50%, hotpink 0);
 	animation-duration:13s;
+
+    animation-name: planeet5;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+	animation-duration:20s;
 }
 
 ul li:nth-of-type(5) {
-	--radius:40vmin;
+	--radius:44vmin;
 	width:4.5vmin;
-	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	background-image:linear-gradient(turquoise 50%, black 0);
+
+    animation-name: planeet4;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:16s;
 }
 
 ul li:nth-of-type(6) {
-	--radius:35vmin;
+	--radius:39vmin;
 	width:6vmin;
-	background-image:linear-gradient(turquoise 50%, hotpink 0);
+	background-image:linear-gradient(orange 50%, hotpink 0);
+
+    animation-name: planeet3;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:15s;
 }
 
 ul li:nth-of-type(7) {
-	--radius:30vmin;
+	--radius:34vmin;
 	width:5.5vmin;
 	background-image:linear-gradient(turquoise 50%, hotpink 0);
+
+    animation-name: planeet2;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:24s;
 }
 
 ul li:nth-of-type(8) {
-	--radius:25vmin;
+	--radius:29vmin;
 	width:5vmin;
 	background-image:linear-gradient(turquoise 50%, hotpink 0);
+
+    animation-name: planeet1;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 	animation-duration:20s;
 }
