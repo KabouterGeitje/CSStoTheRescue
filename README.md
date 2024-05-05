@@ -60,7 +60,7 @@ Ik moest zo goed als alle styling nog doen en de animaties bedenken en maken. He
 
 Ik begon met de slurf die ik samen met Sanne had gemaakt. Aangezien me dat perfect leek om mee te beginnen. Het was alweer een tijdje geleden dat ik dit met Sanne had uitgevogeld, dus ik moest er weer opnieuw naar kijken, vóór ik het echt weer begreep, maar door te experimenteren, kwam ik er gauw achter wat de logica er achter precies was.
 
-![slurf](/docs/images/buisMetSanneMaarAndersProcenten.png)
+![slurf](/docs/images/buisMetSanneMaarAndersProcentenpng.png)
 
 </details>
 
