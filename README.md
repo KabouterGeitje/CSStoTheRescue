@@ -50,6 +50,20 @@ hieronder wat ik tot nu toe heb:
 
 </details>
 
+<details>
+  <summary>herkansing</summary>
+  
+  ## Wat heb ik gedaan?
+Ik kon pas weer werken aan dit vak na HCD en API. We kregen een week voor alle herkansingen. Hierdoor had ik weinig tijd over, maar ik heb mijn uiterste best gedaan om er iets moois van te maken. Ik heb zo hard doorgewerkt dat ik in de tussentijd geen screenshots heb kunnen nemen, maar omdat ik alles net nog heb gedaan, kan ik er wel iets over vertellen!
+
+Ik moest zo goed als alle styling nog doen en de animaties bedenken en maken. Het voelde als een enorme uitdaging om dit in een paar dagen te moeten doen, maar ik heb alles gegeven wat er nog in zat na de andere vakken.
+
+Ik begon met de slurf die ik samen met Sanne had gemaakt. Aangezien me dat perfect leek om mee te beginnen. Het was alweer een tijdje geleden dat ik dit met Sanne had uitgevogeld, dus ik moest er weer opnieuw naar kijken, vóór ik het echt weer begreep, maar door te experimenteren, kwam ik er gauw achter wat de logica er achter precies was.
+
+![slurf](/docs/images/buisMetSanneMaarAndersProcenten.png)
+
+</details>
+
 <!-- Add a link to your live demo in Github Pages 🌐-->
 
 <!-- ☝️ replace this description with a description of your own work -->
