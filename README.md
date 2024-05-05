@@ -58,28 +58,30 @@ Ik kon pas weer werken aan dit vak na HCD en API. We kregen een week voor alle h
 
 Ik moest zo goed als alle styling nog doen en de animaties bedenken en maken. Het voelde als een enorme uitdaging om dit in een paar dagen te moeten doen, maar ik heb alles gegeven wat er nog in zat na de andere vakken.
 
-Ik begon met de slurf die ik samen met Sanne had gemaakt. Aangezien me dat perfect leek om mee te beginnen. Het was alweer een tijdje geleden dat ik dit met Sanne had uitgevogeld, dus ik moest er weer opnieuw naar kijken, vóór ik het echt weer begreep, maar door te experimenteren, kwam ik er gauw achter wat de logica er achter precies was.
+Ik begon met de slurf die ik samen met Sanne had gemaakt. Aangezien me dat perfect leek om mee te beginnen. Het was alweer een tijdje geleden dat ik dit met Sanne had uitgevogeld, dus ik moest er weer opnieuw naar kijken, vóór ik het echt weer begreep, maar door te experimenteren, kwam ik er gauw achter wat de logica er achter precies was. Ik had alleen 1 probleempje. mijn buis-elementen hebben geen width of height, maar hebben vorm dankzij een grid. Hierdoor moest ik telkens goed zoeken wat nou precies de transform-origin moest zijn. Ik heb gewoon geëxperimenteerd hiermee en hierdoor de antwoorden gevonden.
 
 ![slurf](/docs/images/buisMetSanneMaarAndersProcentenpng.png)
 
+Ik heb de elementen stuk vóór stuk vormgegeven. Eerst de vormen bepaald, daarna de kleuren, daarna de details in de styling pas en daarna de animaties.
+
+Ik wilde graag mijn flippers laten bewegen met mijn toetsenbord, maar ik had hier uiteindelijk geen tijd meer voor. Ook zijn mijn hersenene zo op, dat ik het gewoon niet meer kan opbrengen.
+
+Ik wilde eigenlijk de bal laten ontploffen, maar heb hier helaas ook geen tijd meer gevonden, ik heb hem wel laten stuiteren, want de bal niet animeren van een pinbal machine is wel heel stom.
+
+Mijn focus was ook helemaal niet het spel van de pinbal machine, maar dat het juist een ander soort machine werd. Eentje die niet logisch is, maar rare dingen doet en waarmee je dus moet spelen (door de hoveren of te klikken)
+
+Ik had veel meer animaties willen toevoegen. De mooiste animatie die ik heb vind ik de raket. Ik wilde eigenlijk het gat waarin hij verdwijnt ook nog animeren, maar daar ahd ik dus ook geen tijd meer voor.
+
+Ik heb wel gebruik gemaakt van een container query en de hovers heb ik genest in het desbetreffende element.
+
+Ik had elk element een class gegeven. Deze heb ik op het einde verwijderd. Vaak gingen dingen stuk, dus ik heb veel moeten zoeken naar de goede selectors.
+Uiteindelijk heb ik 1 class laten staan, omdat mijn animatie kapot ging. (de belangrijkste animatie ook nog)
+
+Ik ben al met al toch heel blij en trots op wat ik heb gemaakt. Ik vind deze minor heel veel en ook vaak lastig, waardoor ik snel overweldigd ben en in een soort freeze state terecht kom. Ik stond meerdere keren op het punt om het op te geven, maar ik me na elke huilbui weer rechtgezet en ben doorgegaan. Of het nu een voldoende wordt of niet, ik ben trots op hoe ik gewerkt heb.
+
+hieronder het eindresultaat
+
+![eindResultaat](/docs/images/eindResultaat.png)
+
 </details>
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
-
-<!-- ☝️ replace this description with a description of your own work -->
-
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
-
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
-
-<!-- Maybe a table of contents here? 📚 -->
-
-<!-- How about a section that describes how to install this project? 🤓 -->
-
-<!-- ...but how does one use this project? What are its features 🤔 -->
-
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
-
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
