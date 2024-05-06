@@ -914,7 +914,7 @@ body > main > section > div:nth-of-type(6) > div:nth-of-type(3) {
   grid-column-end: 7;
   grid-row-start: 9;
   grid-row-end: 10;
-  transform-origin: 0%;
+  transform-origin: 10% 50%;
   rotate: 45deg;
   transform: translateY(10%);
 
@@ -1164,7 +1164,8 @@ body > main > section > div:nth-of-type(6) > div:nth-of-type(13) {
 
   @keyframes planeet6 {
     0% {
-      transform: rotateZ(0turn) translateY(var(--radius)) rotateZ(0turn)
+      transform: rotateZ(0turn) translateY(var(--r
+      adius)) rotateZ(0turn)
         rotateX(-50deg) translateX(-5%);
     }
     100% {
